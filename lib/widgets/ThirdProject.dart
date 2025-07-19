@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_app/widgets/widgets.dart';
 
 class thirdProject extends StatelessWidget {
   const thirdProject({super.key});
@@ -7,12 +8,13 @@ class thirdProject extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 150,
+      height: 190,
       decoration: BoxDecoration(
         color: Colors.purple,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
@@ -35,6 +37,7 @@ class thirdProject extends StatelessWidget {
               'Hem kendimden hem de yazılım alanındaki deneyimlerimden bahsettiğim bir mobil uygulama',
             ),
           ),
+          GitHubButton(url: "https://github.com/Berk2259/Profil-Uygulamas-"),
         ],
       ),
     );

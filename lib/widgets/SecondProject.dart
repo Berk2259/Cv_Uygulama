@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_app/widgets/widgets.dart';
 
 class ikinciProje extends StatelessWidget {
   const ikinciProje({super.key});
@@ -7,7 +8,7 @@ class ikinciProje extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 150,
+      height: 190,
       decoration: BoxDecoration(
         color: Colors.red,
         borderRadius: BorderRadius.circular(20),
@@ -36,6 +37,7 @@ class ikinciProje extends StatelessWidget {
               'Günlük olarak yapmam gereken görevleri not aldığım bu mobil uygulamada, verileri cihazda saklamak için Hive local database\'ini kullandım.',
             ),
           ),
+          GitHubButton(url: "https://github.com/Berk2259/Todo-List"),
         ],
       ),
     );

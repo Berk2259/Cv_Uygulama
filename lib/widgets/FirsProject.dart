@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:profile_app/widgets/GitHubButton.dart';
 
 class ilkProje extends StatefulWidget {
   const ilkProje({super.key});
@@ -13,7 +13,7 @@ class _ilkProjeState extends State<ilkProje> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 180,
+      height: 190,
       decoration: BoxDecoration(
         color: Colors.cyanAccent,
         borderRadius: BorderRadius.circular(20),
@@ -44,6 +44,7 @@ class _ilkProjeState extends State<ilkProje> {
               'Çölyak hastaları için geliştirdiğim bu mobil uygulamada, kullanıcılar glutensiz restoranları harita üzerinde kolayca görüntüleyebiliyor. ',
             ),
           ),
+          GitHubButton(url: ""),
         ],
       ),
     );
