@@ -8,7 +8,7 @@ class ProjectScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Projeler Sayfası'),
+        title: Text('Projeler Sayfaı'),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
@@ -17,6 +17,20 @@ class ProjectScreen extends StatelessWidget {
           padding: const EdgeInsets.only(top: 16, left: 8, right: 8),
           child: Column(
             children: [
+              Container(
+                margin: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.orangeAccent,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Yapmakta Olduğum Projeler',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
               Padding(padding: const EdgeInsets.all(16.0), child: ilkProje()),
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -26,6 +40,24 @@ class ProjectScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: thirdProject(),
               ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.orangeAccent,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Dahil olduğum Projeler',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: fouthProject(),
+              ),
+              SizedBox(height: 100),
             ],
           ),
         ),
@@ -33,4 +65,3 @@ class ProjectScreen extends StatelessWidget {
     );
   }
 }
-

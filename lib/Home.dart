@@ -21,6 +21,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: _pages[_page],
       bottomNavigationBar: CurvedNavigationBar(
         height: 60,

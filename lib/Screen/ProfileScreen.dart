@@ -22,7 +22,7 @@ class ProfileScreen extends StatelessWidget {
               width: 250,
               height: 50,
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.cyanAccent,
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Column(
@@ -46,31 +46,108 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
+            HakkindaSection(),
+            const SizedBox(height: 20),
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.only(top: 10, left: 15, right: 15),
               child: Container(
+                height: 320,
                 width: double.infinity,
-                height: 130,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.lightBlueAccent,
+                  color: Colors.cyanAccent,
+                  borderRadius: BorderRadius.circular(20),
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(
-                        left: 10.0,
-                        top: 5.0,
-                        right: 10,
+                      padding: const EdgeInsets.only(top: 10, left: 15),
+                      child: Text(
+                        'Eğitim',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 22,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
-                      child: Container(child: Hakkinda()),
                     ),
-                    HakkindaSubtitle(),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 15),
+                          child: Image(
+                            image: AssetImage('assets/images/universty.png'),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 15),
+                          child: Text(
+                            'Üniversite',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 15),
+                          child: Text(
+                            'Manisa Celel Bayar Üniversitesi 2022 - 2027',
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 15),
+                          child: Text('Faaliyetler: Erasmus+ Polonya (2025)'),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 15),
+                          child: Image(
+                            image: AssetImage('assets/images/school.png'),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 25, left: 15),
+                          child: Text(
+                            'Lise',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 15),
+                          child: Text(
+                            'Tekirdağ Namık Kemal Lisesi 2017 - 2021',
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, left: 15),
+                          child: Text(
+                            'Faaliyetler: Kardeş Okul Projesi Almanya (2019)',
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
             ),
+            SizedBox(height: 100),
           ],
         ),
       ),
