@@ -15,8 +15,8 @@ class _HomeState extends State<Home> {
 
   final List<Widget> _pages = [ProjectScreen(), ProfileScreen()];
   final List<Widget> icon = [
-    Icon(Icons.code, size: 24),
-    Icon(Icons.person, size: 24),
+    Icon(Icons.code, size: 24, color: Colors.white),
+    Icon(Icons.person, size: 24, color: Colors.white),
   ];
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
         height: 60,
         items: icon,
         backgroundColor: Colors.transparent,
-        color: Colors.blue,
+        color: Colors.blue.shade900,
         animationDuration: Duration(milliseconds: 300),
         index: _page,
         onTap: (index) {

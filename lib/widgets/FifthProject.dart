@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/widgets/widgets.dart';
+import 'package:profile_app/widgets/GitHubButton.dart';
 
-class thirdProject extends StatelessWidget {
-  const thirdProject({super.key});
+class FifthProject extends StatefulWidget {
+  const FifthProject({super.key});
 
+  @override
+  State<FifthProject> createState() => _FifthProjectState();
+}
+
+class _FifthProjectState extends State<FifthProject> {
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       height: 190,
       decoration: BoxDecoration(
-        color: Colors.purple,
         borderRadius: BorderRadius.circular(20),
+        color: Colors.pink,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -19,13 +24,13 @@ class thirdProject extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 10, left: 15),
-                child: Image(image: AssetImage('assets/images/cv.png')),
+                padding: EdgeInsets.only(left: 15),
+                child: Image(image: AssetImage('assets/images/movie.png')),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10, left: 15),
+                padding: EdgeInsets.only(top: 10, left: 15),
                 child: Text(
-                  'Cv Uygulaması',
+                  'Filmiko',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -36,13 +41,13 @@ class thirdProject extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 15, top: 10),
+            padding: EdgeInsets.only(left: 16.0, top: 8.0),
             child: Text(
-              'Hem kendimden hem de yazılım alanındaki deneyimlerimden bahsettiğim bir mobil uygulama',
+              'Kullanıcıların kendilerine ait film kütüphanesi yapableceği bir uygulama',
               style: TextStyle(color: Colors.white),
             ),
           ),
-          GitHubButton(url: "https://github.com/Berk2259/Profil-Uygulamas-"),
+          GitHubButton(url: "https://github.com/Berk2259/Filmiko"),
         ],
       ),
     );

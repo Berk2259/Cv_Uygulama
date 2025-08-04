@@ -26,7 +26,11 @@ class fouthProject extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 10, left: 15),
                 child: Text(
                   'Movliq',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ],
@@ -35,6 +39,7 @@ class fouthProject extends StatelessWidget {
             padding: const EdgeInsets.only(top: 10, left: 15),
             child: Text(
               'Spor ve koşu alanında kullanıcıların birbiri ile rekabet edebildiği bir uygulama',
+              style: TextStyle(color: Colors.white),
             ),
           ),
           GitHubButton(url: ''),

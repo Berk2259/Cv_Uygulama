@@ -6,3 +6,5 @@ export 'GitHubButton.dart';
 export 'FourthProject.dart';
 export 'HakkindaSection.dart';
 export 'EgitimSection.dart';
+export 'FifthProject.dart';
+export 'SixthProject.dart';

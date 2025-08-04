@@ -20,13 +20,17 @@ class ikinciProje extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 10, left: 15),
-                child: Image(image: AssetImage('assets/images/to-do-list.png')),
+                child: Image(image: AssetImage('assets/images/check.png')),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 10, left: 15.0),
                 child: Text(
                   'Todo List',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ],
@@ -35,6 +39,7 @@ class ikinciProje extends StatelessWidget {
             padding: const EdgeInsets.only(left: 15, top: 10),
             child: Text(
               'Günlük olarak yapmam gereken görevleri not aldığım bu mobil uygulamada, verileri cihazda saklamak için Hive local database\'ini kullandım.',
+              style: TextStyle(color: Colors.white),
             ),
           ),
           GitHubButton(url: "https://github.com/Berk2259/Todo-List"),
